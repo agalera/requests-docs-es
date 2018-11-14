@@ -734,7 +734,7 @@ Timeouts
 
 La mayoría de las peticiones externas deben tener un timeout anexo, en caso de que el servidor no esté respondiendo a tiempo.
 
-El timeout **connect** es el número de segundos que Request esperará para que tu cliente establesca una conexión a una máquina remota (correspondiente al método `connect()`_) en el socket. Es una buena práctica establecer tiempos de conexión a algo un poco más grande que un múltiplo de 3, para permitir el tiempo por defecto  `TCP
+El timeout **connect** es el número de segundos que Request esperará para que tu cliente establezca una conexión a una máquina remota (correspondiente al método `connect()`_) en el socket. Es una buena práctica establecer tiempos de conexión a algo un poco más grande que un múltiplo de 3, para permitir el tiempo por defecto  `TCP
 retransmission window <http://www.hjp.at/doc/rfc/rfc2988.txt>`_.
 
 Una vez que tu cliente se ha conectado al servidor y enviado la petición HTTP, el timeout **read** es el número de segundos que el cliente esperará para que el servidor envie una respuesta. (Específicamente, es el número de segundos que el cliente esperará *entre* los bytes enviados desde el servidor. En la práctica, esto es el tiempo antes de que el servidor envíe el primer byte).
